@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link type="image/png" rel="icon" href="icons8-password-50.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+
+<body style="background-color: #32353f;">
+    <div class="container">
+        <div class="upper">
+            <h1 class="heading">
+                Password Generator</span>
+            </h1>
+            <div class="box1">
+                <label for="length" style="font-size: larger;">
+                    Choose Password length :
+                </label>
+                <input type="number" id="length" min="4" max="20" value="10" />
+            </div>
+            <div class="settings">
+                <div class="setting">
+                    <label>Include Uppercase Letters</label>
+                    <input type="checkbox" id="upperCase" checked>
+                </div>
+
+                <div class="setting">
+                    <label>Include Lowercase Letters</label>
+                    <input type="checkbox" id="lowerCase" checked>
+                </div>
+
+                <div class="setting">
+                    <label>Include Numbers</label>
+                    <input type="checkbox" id="number" checked>
+                </div>
+
+                <div class="setting1">
+                    <label>Include Symbols</label>
+                    <input type="checkbox" id="symbol" checked>
+                </div>
+            </div>
+        </div>
+        <button class="generatePassword" id="generatePassword">Generate Passwords</button>
+        <div class="data">
+            <p id="ans">Your Passwords are</p>
+            <div id="firstpass" class="outputText"></div>
+            <button class="btn" id="clipboard" title="Copy To Clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+            <div id="secondpass" class="outputText"></div>
+            <button class="btn" id="clipboard1" title="Copy To Clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

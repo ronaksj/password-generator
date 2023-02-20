@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 420px;
+    height: 500px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+                2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+                2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+    margin: 30px auto;
+    padding: 45px;
+    padding-top: 35px;
+    background-color: #3b445c;
+    border-radius: 6px;
+}
+.upper {
+    border-bottom: 2px solid rgb(221 221 241 / 46%);
+}
+.heading {
+    font-family: 'Karla', sans-serif;
+    font-size: 32px;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 1;
+    color: #00ffaa;
+    margin-bottom: 5px;
+}
+input[type="number"] {
+    background-color: rgb(67, 75, 90);
+    border-radius: 3px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    text-align-last: center;
+}
+.setting,.setting1 {
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    margin: -30px 0;
+    padding: 23px;
+    margin-bottom: -13px;
+}
+.upper {
+    border-bottom: 2px solid rgb(221 221 241 / 46%);
+}
+.box1 {
+    background-color: #455070;
+    color:#fff;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 25px 0px;
+    padding: 12px
+}
+.data .btn {
+    font-size: 20px;
+    position: relative;
+    top: -12px;
+    right: -116px;
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+.btn:hover {
+    background-color: #8391b6;
+    color: white;
+}
+#ans {
+    color: aquamarine;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin: -28px 0 13px -23px;
+}
+.generatePassword {
+    background-color: #0fce8e;
+    color: white;
+    padding: 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 19px;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 0 14px 60px;
+    cursor: pointer;
+}
+.generatePassword:hover {
+    background-color: #e3c482;
+    color: rgb(11, 24, 24);
+}
+.data {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data>div {
+    width: 220px;
+    margin: 0 0 -28px -30px;
+    height: 40px;
+    padding: 12px 10px;
+    background-color: #29384c;
+    color: #00ffaa;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
