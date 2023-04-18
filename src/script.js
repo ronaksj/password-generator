@@ -32,33 +32,19 @@ const clipboard2 = document.getElementById('clipboard1');
 clipboard1.addEventListener('click', () => {
     const textarea = document.createElement('textarea');
     const password0 = result1.innerText;
-
-    if (!password0) {
-        return;
-    }
-
-    textarea.value = password0;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    textarea.remove();
-    alert('Password copied to clipboard');
+    navigator.clipboard.writeText(password0).then(
+        function () {
+            alert("First Passwrod is copied to the clipboard!");
+        });
 });
 
 clipboard2.addEventListener('click', () => {
     const textarea1 = document.createElement('textarea');
     const password1 = result2.innerText;
-
-    if (!password1) {
-        return;
-    }
-
-    textarea1.value = password1;
-    document.body.appendChild(textarea1);
-    textarea1.select();
-    document.execCommand('copy');
-    textarea1.remove();
-    alert('Password copied to clipboard');
+    navigator.clipboard.writeText(password1).then(
+        function () {
+            alert("Second Passwrod is copied to the clipboard!");
+        });
 });
 
 generatel.addEventListener('click', () => {
