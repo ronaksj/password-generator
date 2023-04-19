@@ -1,3 +1,5 @@
+# Demo:
+   https://password-generator-rj.netlify.app/
 # password-generator
 - Strong and complex password is required in every websites and applications thus I made a password-generator using HTML5, CSS3 and JavaScript.
 - Here I used different character sets to create combinational strong password.
